@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function deleteNumberFromArray(arr, index) {
+        if (index < 0 || index > arr.length) {
+            return arr;
+        }
+
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (i !== index) {
+                arr1.push(arr[i])
+            }
+        }
+        return arr1;
+    }
+
+    //vi du
+    let arr = [1, 2, 3, 4, 5];
+    let index = 0;
+    let result = deleteNumberFromArray(arr, index)
+    console.log(result)
+</script>
+</body>
+</html>
